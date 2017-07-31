@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/nvidia/orb/ORB_SLAM2_GPU-master/Examples/ROS/ORB_SLAM2_GPU/build/devel/setup.sh

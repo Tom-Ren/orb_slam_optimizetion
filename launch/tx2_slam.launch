@@ -1,0 +1,10 @@
+<launch>
+/home/nvidia/orb/ORB_SLAM2_GPU-master/gpu
+  <arg name="setting_file" default="/home/nvidia/orb/ORB_SLAM2_GPU-master/gpu/TX2_ZED.yaml" />
+  <arg name="voc_file"     default="/home/nvidia/orb/ORB_SLAM2_GPU-master/Vocabulary/ORBvoc.txt" />
+  <!--arg name="map_name"     default="/home/nvidia/orb/ORB_SLAM2_GPU-master/Examples/ROS/ORB_SLAM2_GPU/map/2017728_13_18.bin" /-->
+  <arg name="map_name"     default="false" />
+  <node pkg="ORB_SLAM2_GPU" type="tx2" name="tx2" output="screen"
+    args="$(arg voc_file) $(arg setting_file) $(arg map_name)" />
+
+</launch>
